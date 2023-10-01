@@ -249,7 +249,7 @@ nav ul .fas{
     
 }
 
-@media(max-width:450px){
+@media(max-width:456px){
     
     .content h1{
         font-size: 1.5rem;
@@ -266,6 +266,10 @@ nav ul .fas{
                 }
         .content button{
             width: 50%;
+        }
+        #Courses .tab-sec{
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
         }
         #Courses .a-tabs{
             height: auto;
