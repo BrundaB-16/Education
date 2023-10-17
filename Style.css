@@ -186,7 +186,56 @@ font-style: italic;
     font-size: .8rem;
     color: #333;
 }
+/*-------------------------------*/
+#about{
+    width: 100%;
+    height: auto;
+    padding: 20px 2%;
+    border-bottom: 1px solid #dadada; 
+    text-align: center;
+}
+#about h3{
+    color: #02193a;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 25px 0;
+}
+#about .ab-sec{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+    margin: 20px 0;
+    /*background-color: #1c759e;*/
+}
+#about .ab-ryt{
+  /*  background-color: #bec9ce;*/
+    height: auto;
+    border-radius: 5px;
+    padding:  0;
+}
+#about .ab-tabs img{
+    width: 100%;   
+    border: 1px solid #02193a;
+}
+#about .ab-lft{
+     background-color: #eef0f1;
+      height: auto;
+      border-radius: 5px;
+      padding: 20px 50px 20px 30px;
+      text-align: left;
+  }
 
+#about .ab-lft h5{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #03355e;
+    margin: 10px 0;
+}
+#about .a-tabs p{
+    font-size: 1rem;
+    color: #070707;
+}
+/*-------------------------------*/
 
 
 @media(max-width:800px){
@@ -274,7 +323,16 @@ nav ul .fas{
         #Courses .a-tabs{
             height: auto;
         }
-    
+
+
+        #about .ab-sec{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-gap: 20px
+        }
+        #about .ab-lft{
+             padding: 20px 30px;
+         }
 }
 
 
