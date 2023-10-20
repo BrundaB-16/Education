@@ -15,7 +15,7 @@ body{
 }
 .container{
     padding: 10px 10%;
-    background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(13, 14, 14, 0.5)), url(./img/edu.jpg);
+    background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(13, 14, 14, 0.5)), url(./img/bk.jpg);
     background-size: cover;
     background-position:center ;
     width: 100%;
@@ -49,9 +49,10 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+    text-transform: uppercase;
 }
 nav ul li a:hover{
-color: #66b5da;
+color: #162c36;
 }
 nav .fas{
     color: #e3e6e7;
@@ -87,6 +88,7 @@ font-style: italic;
     font-size: 1rem;
     border-radius: 10px;
 }
+/*====================== Univercity=================*/
 .header #University {
     width: 100%;
     height: auto;
@@ -186,6 +188,73 @@ font-style: italic;
     font-size: .8rem;
     color: #333;
 }
+/*=====================  Certificate  =================*/
+ #Certificate{
+    width: 100%;
+    height: auto;
+    padding: 20px 2%;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada; 
+}
+.crd{
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.crd::-webkit-scrollbar{
+    display: none;
+}
+#Certificate h3{
+    color: #063449;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#Certificate .Ce-cards{
+    cursor: pointer;
+    background-color: #95d0f3;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px ;
+    text-align: center;
+    display: inline-block;
+}
+#Certificate .Ce-cards img{
+    width: 80%;                     ;
+    height: 100px;
+    border-radius: 5px;
+}
+#Certificate .arrow img{
+    width: 80%;                     ;
+    height: 130px;
+    border-radius: 5px;
+}
+.Ce-cards h5{
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+} 
+.Ce-cards p{
+    font-size: .8rem;
+    color: #02193a;
+    margin: 10px 0;
+} 
+.Ce-cards button{
+    font-size: .8rem;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #1c9e88;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    height: 2rem;
+    padding: 0 10px;
+    margin: 10px 0;
+    cursor: pointer;
+} 
+
 /*-------------------------------*/
 #about{
     width: 100%;
@@ -235,6 +304,55 @@ font-style: italic;
     font-size: 1rem;
     color: #070707;
 }
+/*====================================*/
+
+#Reivew {
+    width: 100%;
+    height: auto;
+    padding: 20px 2%;
+    border-bottom: 1px solid #dadada; 
+    text-align: center;
+}
+#Reivew h3{
+    color: #02193a;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 25px 0;
+}
+#Reivew .R-sec{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+    margin: 20px 0;
+}
+#Reivew .a-tabs{
+    background-color: #bec9ce;
+    height: auto;
+    border-radius: 5px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+#Reivew .a-tabs img{
+    width: 70%;
+    height: 150px;   
+}
+#Reivew .a-tabs h5{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #02193a;
+}
+#Reivew .a-tabs p{
+    font-size: .8rem;
+    color: #333;
+}
+
+
+
+
+
+
+
+
 /*-------------------------------*/
 
 
@@ -289,6 +407,14 @@ nav ul .fas{
 
 @media(max-width:576px){
 
+    .container{
+        padding: 10px 10%;
+        background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(13, 14, 14, 0.5)), url(./img/bk-md.jpg);
+        background-size: cover;
+        background-position:center ;
+        width: 100%;
+        height: 100vh;
+    }
     .content h1{
         margin-top: 40%;
         }
