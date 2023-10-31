@@ -1,4 +1,5 @@
-//==============nav===================
+//========================nav======================//
+
 var sidem=document.getElementById("sidemenu");
 
         function openmenu(){
@@ -7,13 +8,41 @@ var sidem=document.getElementById("sidemenu");
         function closemenu(){
             sidem.style.top="-80%";
         }
+//=========================slider========================//
+        const slider = document.querySelector(".slider");
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+
+let currentIndex = 0;
+
+prevButton.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
+  }
+});
+
+nextButton.addEventListener("click", () => {
+  if (currentIndex < slider.children.length -1) {
+    currentIndex++;
+    updateSlider();
+  }
+});
+
+function updateSlider() {
+  const cardWidth = slider.children[0].offsetWidth;
+  slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
+
+window.addEventListener("resize", updateSlider);
+updateSlider();
 
 
- //=======================GSAP====================
+ //=======================GSAP====================//
+ 
         var tl= gsap.timeline();
 
         tl 
-        
         .from(".content h2",{
             opacity:0,
             duration:1
@@ -27,6 +56,8 @@ var sidem=document.getElementById("sidemenu");
             scale:1.2,
             duration:1
         })
+
+
         
 
 

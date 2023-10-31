@@ -59,6 +59,7 @@ nav .fas{
     display: none;
     font-size: 15px;
 }
+/*===============================================*/
 .content{
     color: #cfc7a4; 
     text-align: center;
@@ -79,7 +80,7 @@ font-style: italic;
 .content button{
     cursor: pointer;
     height: 2.5rem;
-    width: 20%;
+    width:20%;
     margin: 25px 0;
     border: 0;
     outline: none;
@@ -145,10 +146,12 @@ font-style: italic;
     border: 0;
     outline: 0;
     height: 2rem;
+    width: auto;
     padding: 0 10px;
     margin: 10px 0;
     cursor: pointer;
 } 
+/*==========================================*/
 #Courses {
     width: 100%;
     height: auto;
@@ -250,12 +253,13 @@ font-style: italic;
     border: 0;
     outline: 0;
     height: 2rem;
+    width: auto;
     padding: 0 10px;
     margin: 10px 0;
     cursor: pointer;
 } 
 
-/*-------------------------------*/
+/*====================================*/
 #about{
     width: 100%;
     height: auto;
@@ -319,32 +323,76 @@ font-style: italic;
     font-weight: 500;
     margin: 25px 0;
 }
-#Reivew .R-sec{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 40px;
-    margin: 20px 0;
-}
-#Reivew .a-tabs{
-    background-color: #bec9ce;
-    height: auto;
-    border-radius: 5px;
-    padding: 20px 0;
-    cursor: pointer;
-}
-#Reivew .a-tabs img{
-    width: 70%;
-    height: 150px;   
-}
-#Reivew .a-tabs h5{
-    font-size: 1rem;
-    font-weight: 700;
-    color: #02193a;
-}
-#Reivew .a-tabs p{
-    font-size: .8rem;
-    color: #333;
-}
+#Reivew .R-sec {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .slider-container {
+        width: 80%;
+        overflow: hidden;
+       position: relative;
+        margin: 20px 0;
+        
+      }
+      
+      .slider {
+        display: flex;
+        transition: transform 0.5s;
+      }
+      
+      .card {
+        flex: 0 0 100%;
+        border:0;
+        height: auto;
+        background-color: #9ec1c5;
+        color: #070707;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display:inline-block;
+        font-size: 24px;
+        padding: 30px 60px;
+      }
+      .card img {
+        height: 200px;
+        width: 300px;
+        border-radius: 50%;
+        margin: 10px 0;
+        border: #02193a solid 2px;
+      }
+      .card .rv{
+        padding: 0 30px;
+      }
+      .card .rv h6{
+        color: #1c759e;
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .card .rv p{
+        font-size: 18px;
+      }
+      .card .rv p i{
+        font-size: 20px;
+        color: #03355e;
+        margin-bottom: 10px;
+      }
+
+      button {
+       background-color: rgb(137, 184, 196);
+       margin: 0 20px;
+        border: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      button .fa-solid{
+          color: #02193a;
+          font-size: 20px;
+      }
+      
 
 
 
@@ -353,7 +401,9 @@ font-style: italic;
 
 
 
-/*-------------------------------*/
+
+
+/*=======================================*/
 
 
 @media(max-width:800px){
@@ -392,7 +442,7 @@ nav ul .fas{
 
 }
 
-
+/*===========================================*/
 @media(max-width:768px){
 
     .content h1{
@@ -401,9 +451,19 @@ nav ul .fas{
         .content button{
             width: 40%;
         }
-    
+        .slider-container{
+            width: 90%;
+        }
+        .card{
+            padding: 20px 40px;
+        }
+        button {
+            margin: 0 5px;
+            width: 30px;
+            height: 30px;
+        }
 }
-
+/*===========================================*/
 
 @media(max-width:576px){
 
@@ -421,9 +481,50 @@ nav ul .fas{
         .content button{
             width: 50%;
         }
-    
+        
+              .slider-container {
+                width:100%;
+                margin: 20px 0;
+                
+              }            
+              .card {
+                padding: 20px 50px;
+              }
+              .card img {
+                height: 150px;
+                width: 220px;
+                margin: 10px 0;
+              }
+              .card .rv{
+                padding: 0 25px;
+              }
+              .card .rv h6{
+                font-size: 18px;
+                margin: 10px 0;
+              }
+              .card .rv p{
+                font-size: 15px;
+              }
+              .card .rv p i{
+                font-size: 18px;
+               
+              }
+        
+              button {
+               margin: 0 -10px;
+                width: 30px;
+                height: 30px;
+                z-index: 2;
+              }
+              button .fa-solid{
+                  font-size: 20px;
+                
+              }
+              
+        
+        
 }
-
+/*===============================================*/
 @media(max-width:456px){
     
     .content h1{
@@ -459,6 +560,72 @@ nav ul .fas{
         #about .ab-lft{
              padding: 20px 30px;
          }
+         .slider-container {
+            margin: 10px 0;
+            
+          }            
+          .card {
+            padding: 20px 30px;
+          }
+
+          .card .rv p i{
+            font-size: 18px;
+          }
+    
+         
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
