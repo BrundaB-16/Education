@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-color: #e4e9ec;
 }
@@ -392,9 +395,46 @@ font-style: italic;
           color: #02193a;
           font-size: 20px;
       }
-      
-
-
+      #footer {
+        width: 100%;
+        height: auto;
+        padding: 20px 2%;
+        border-bottom: 1px solid #dadada; 
+        text-align: center;
+        background-color: #161616;
+    }
+      #footer .f-sec{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 40px;
+        margin: 20px 0;
+    }
+    #footer .f-tabs h4{
+        color: #919b93;
+    }
+    #footer .f-tabs p{
+        color: #525252;
+    }
+   #footer .f-tabs h2{
+        color: #807b7b;
+    }
+    #footer .f-tabs span{
+        color: #1c9e88;
+    }
+    #footer .f-tabs i{
+        color: #bbafaf;
+        font-size: 20px;
+        margin: 15px;
+    }
+    #footer .f-tabs i:hover{
+        color: #1c9e88;
+        transition: .5s;
+        font-size: 18px;
+    }
+    #footer .f-tabs li{
+        list-style: none;
+        color: #525553;
+    }
 
 
 
@@ -469,7 +509,7 @@ nav ul .fas{
 
     .container{
         padding: 10px 10%;
-        background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(13, 14, 14, 0.5)), url(./img/bk-md.jpg);
+        background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(13, 14, 14, 0.5)), url(./img/b-k-2.jpg);
         background-size: cover;
         background-position:center ;
         width: 100%;
@@ -571,6 +611,11 @@ nav ul .fas{
           .card .rv p i{
             font-size: 18px;
           }
+          #footer .f-sec{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            
+        }
     
          
 }
