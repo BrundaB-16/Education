@@ -36,6 +36,7 @@ nav{
     background-color:#2c848abe;
     width: 100%;
     cursor: pointer;
+    z-index: 99;
 }
 
 .logo{
