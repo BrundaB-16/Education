@@ -57,7 +57,19 @@ updateSlider();
             duration:1
         })
 
-
+        gsap.to("nav",{
+          backgroundColor:"#0b5055f8",
+          height:"70px",
+          duration:1,
+          scrollTrigger:{
+              trigger:"#nav",
+              scroller:"body",
+             // markers:true,
+              start:"top -10%",
+              end:"top -11%",
+              scrub:1
+          }
+      })
         
 
 
